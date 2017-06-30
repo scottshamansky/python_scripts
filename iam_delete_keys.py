@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-# delete_iam_keys.py
+# iam_delete_keys.py
 # ------------------
 # This script deletes an iam user's access keys. It takes one option, iam username.
 #
-# example: ./delete_iam_keys.py -u user-name
+# example: ./iam_delete_keys.py -u user-name
 #
 
 import boto
