@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import getopt
@@ -14,7 +14,7 @@ filename = ''
 path = ''
 
 def usage():
-    print 'Usage: ' + sys.argv[0] + ' -k "aws-access-key-id" -s "aws-secret-access-key" -b "bucket" -f "file" -p "path"'
+    print ('Usage: ' + sys.argv[0] + ' -k "aws-access-key-id" -s "aws-secret-access-key" -b "bucket" -f "file" -p "path"')
 
 
 if len(sys.argv) < 8:
@@ -51,7 +51,7 @@ try:
     k.set_contents_from_filename(filename)
     k.set_acl('bucket-owner-full-control')
 except boto.exception as e:
-    print "S3 exception: " + e
+    print ("S3 exception: " + e)
     sys.exit(1)
 
 sys.exit(0)
